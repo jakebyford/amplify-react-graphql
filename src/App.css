@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,36 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* General styles for all screen sizes */
+.App {
+  text-align: center;
 }
+
+/* Styles for small screens (e.g., mobile devices) */
+@media only screen and (max-width: 600px) {
+  .App {
+    /* Adjust styles for small screens */
+  }
+}
+
+/* Styles for medium to large screens (e.g., tablets, laptops, desktops) */
+@media only screen and (min-width: 601px) {
+  /* Adjust styles for medium and larger screens */
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(14px + 2vmin); /* Adjust font size for larger screens */
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+}
+
